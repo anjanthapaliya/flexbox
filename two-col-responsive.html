@@ -25,6 +25,12 @@
   flex: 50%;
 }
 
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media screen and (max-width: 800px) {
+  .flex-item-right.is-mobile, .flex-item-left.is-mobile {
+    flex: 100% !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -39,14 +45,6 @@ screen size is 800px or smaller.</b></p>
   <div class="flex-item-left is-mobile">1</div>
   <div class="flex-item-right is-mobile">2</div>
 </div>
-<style>
-/* Responsive layout - makes a one column-layout instead of a two-column layout */
-@media screen and (max-width: 800px) {
-  .flex-item-right.is-mobile, .flex-item-left.is-mobile {
-    flex: 100% !important;
-  }
-}
-</style>
 
 </body>
 </html>
