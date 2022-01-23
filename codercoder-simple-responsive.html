@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2022 by anonymous (http://jsbin.com/cicahalebe/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>JS Bin</title>
+   <style id="jsbin-css">
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+main, .footer, .hero, .content, .sidebar{
+  margin-top:4px;
+}
+
+main{
+ 
+}
+
+header, footer {
+    margin: 0;
+    padding: 20px;
+    color: #ffffff;
+}
+section, article, aside{
+  padding:20px;
+
+}
+
+body{background:#ccc;}
+
+.header {
+    background: #03a9f4;
+}
+.hero {
+    background: pink;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
+.content {
+    background: #dec;
+}
+.content p, .sidebar p{
+  margin:15px 0px;
+  text-indent: 0px
+}
+.sidebar {
+    background: lightblue;
+}
+
+.footer {
+    border: 1px solid #000000;
+    background: #616161;
+}
+
+@media screen and (min-width:640px){
+  .flex-container{
+    display:flex;
+  }
+  .content{
+    flex:1
+  }
+  .sidebar{
+    flex:0 1 300px;
+  }
+}
+</style>
+</head>
+   <body>
+      <header class="header">Header >> nav</header>
+      <main>
+         <article class="hero">
+           <h2>HERO</h2>
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </article>
+         <div class="flex-container wrapper">
+            <section class="content">
+               <h3>Content</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic possimus officia dolorum est deleniti soluta explicabo ipsum amet, enim expedita cupiditate necessitatibus iste asperiores tempore, impedit sunt voluptatem illo atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate repellat officiis dolores, temporibus totam animi architecto at sunt placeat alias sit eius accusamus dolore earum. Molestias possimus, itaque iure.</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quas ut dolores quasi numquam sed vitae illo excepturi laudantium facere, asperiores sint expedita quidem obcaecati impedit ipsum. Quasi, distinctio impedit.</p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor placeat quia, dolore repellendus dicta nulla asperiores explicabo tempore ab officiis, tenetur amet, quisquam aut aspernatur unde nemo aliquam. Libero, in?
+            </section>
+            <aside class="sidebar">
+              <h3>Sidebar</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptate hic laboriosam, doloribus odit consequatur qui mollitia sed minus numquam, porro, architecto voluptates recusandae blanditiis necessitatibus ipsam aut eveniet facere!</p>
+           </aside>
+         </div>
+      </main>
+      <footer class="footer">&copy; 2022 example.com</footer>
+   </body>
+</html>
